@@ -17,8 +17,15 @@
 		</dependency>
 
 	</dependencies>
+	
+	<distributionManagement>
+   		<repository>
+     			<id>github</id>
+     			<name>GitHub OWNER Apache Maven Packages</name>
+     			<url>https://maven.pkg.github.com/thoughtbend-demos/thoughtbend-spring-web</url>
+   		</repository>
+	</distributionManagement>
 
-	<!-- 
 	<profiles>
 		<profile>
 			<id>github</id>
@@ -29,7 +36,7 @@
 				</repository>
 				<repository>
 					<id>github</id>
-					<url>https://maven.pkg.github.com/OWNER/*</url>
+					<url>https://maven.pkg.github.com/thoughtbend-demos/*</url>
 					<snapshots>
 						<enabled>true</enabled>
 					</snapshots>
@@ -37,7 +44,6 @@
 			</repositories>
 		</profile>
 	</profiles>
-	-->
 
 	<build>
 		<plugins>
